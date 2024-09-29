@@ -15,60 +15,41 @@ This repository contains the code used in creating the annotation data
 
 - Filename: `finetuning.py`
 
-- Finetuning flags usage:
+- Finetuning flags:
 
       -h, --help            show this help message and exit
-      
       --train_data TRAIN_DATA [TRAIN_DATA ...]
                             Training data sources
-                            
       --val_data VAL_DATA [VAL_DATA ...]
                             Validation data sources
-                            
       --test_data TEST_DATA [TEST_DATA ...]
                             Testing data sources
-                            
       --train_sizes TRAIN_SIZES [TRAIN_SIZES ...]
                             Training data sizes
-                            
       --val_sizes VAL_SIZES [VAL_SIZES ...]
                             Validation data sizes
-                            
       --test_sizes TEST_SIZES [TEST_SIZES ...]
                             Testing data sizes
-                            
       --random_seed RANDOM_SEED
                             Random seed
-                            
       --model MODEL         Model name
-      
       --model_path MODEL_PATH
                             Model path
-                            
       --type_specific       Enable type-specific generation
-      
       --train_batch_size TRAIN_BATCH_SIZE
                             Training batch size
-                            
       --val_batch_size VAL_BATCH_SIZE
                             Val batch size
-                            
       --num_epochs NUM_EPOCHS
                             Number of training epochs
-                            
       --num_workers NUM_WORKERS
                             Number of dataloader workers
-                            
       --lr LR               learning rate
-      
       --q4bit               Quantization
-      
       --peft                Peft
-      
       --fp16                Half Precision
-      
       --grad_ckpt           Gradient checkpointing
-
+  
 - Finetuned Models are saved in `Finetuned_Models` folder.
 
 - For example: 
@@ -82,7 +63,7 @@ This repository contains the code used in creating the annotation data
 
 - Filename: `generation.py`
 
-- Generation Flags:
+- Generation flags:
   
       -h, --help            show this help message and exit
       --model_path MODEL_PATH
@@ -121,10 +102,9 @@ This repository contains the code used in creating the annotation data
 - Filename: `scoring.py`
 
 - Scoring flags:
-- 
-    -h, --help            show this help message and exit
-    
-    --file_name file_name    Name of the file in Generated_Samples folder
+
+      -h, --help            show this help message and exit
+      --file_name file_name    Name of the file in Generated_Samples folder
 
 - Metrics Scores are saved in `Results` folder.
 
