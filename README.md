@@ -3,8 +3,10 @@ This repository contains the code used in creating the annotation data
 
 #### For more details about our paper
 
-**Authors** : Punyajoy Saha, Abhilash Datta, Abhik Jana and Animesh Mukherjee: 
+**Authors** : Punyajoy Saha, Abhilash Datta, Abhik Jana and Animesh Mukherjee
+
 **Arxiv Link** :[CrowdCounter: A benchmark type-specific multi-target counterspeech dataset]()
+
 **Paper Link** :
 
 # Abstract
