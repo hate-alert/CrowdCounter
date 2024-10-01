@@ -13,7 +13,13 @@ This repository contains the code used in creating the annotation data
 
 Counterspeech presents a viable alternative to banning or suspending users for hate speech while upholding freedom of expression. However, writing effective counterspeech is challenging for moderators/users. Hence, developing suggestion tools for writing counterspeech is the need of the hour. One critical challenge in developing such a tool is the lack of quality and diversity of the responses in the existing datasets. Hence, we introduce a new dataset - CrowdCounter containing 3,425 hate speech-counterspeech pairs spanning six different counterspeech types (empathy, humor, questioning, warning, shaming, contradiction), which is the first of its kind. The design of our annotation platform itself encourages annotators to write type-specific, non-redundant and high-quality counterspeech. We evaluate two frameworks for generating counterspeech responses - vanilla and type-controlled prompts - across four large language models. In terms of metrics, we evaluate the responses using relevance, diversity and quality. We observe that Flan-T5 is the best model in the vanilla framework across different models. Type-specific prompts enhance the relevance of the responses, although they might reduce the language quality. DialoGPT proves to be the best at following the instructions and generating the type-specific counterspeech accurately. 
 
+Please cite our paper in any published work that uses any of these resources.
 
+~~~bibtex
+
+~~~
+
+# Setup
 
 ### First set these environment variables before running any script
 ```
@@ -23,7 +29,7 @@ Counterspeech presents a viable alternative to banning or suspending users for h
     export TOKENIZERS_PARALLELISM=false
 ```
 
-## For Finetuning LLMs:
+### For Finetuning LLMs:
 
 - Filename: `finetuning.py`
 
@@ -71,7 +77,7 @@ Counterspeech presents a viable alternative to banning or suspending users for h
     
 <hr>
 
-## For Generation:
+### For Generation:
 
 - Filename: `generation.py`
 
@@ -109,7 +115,7 @@ Counterspeech presents a viable alternative to banning or suspending users for h
     
 <hr>
 
-## For Scoring: (3 GPUS REQUIRED)
+### For Scoring: (3 GPUS REQUIRED)
 
 - Filename: `scoring.py`
 
