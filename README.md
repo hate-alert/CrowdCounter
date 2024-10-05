@@ -7,7 +7,7 @@ This repository contains the code used in creating the annotation data
 
 **Arxiv Link** :[CrowdCounter: A benchmark type-specific multi-target counterspeech dataset]()
 
-**Paper Link** :
+**Paper Link** : https://arxiv.org/abs/2410.01400
 
 # Abstract
 
@@ -16,7 +16,15 @@ Counterspeech presents a viable alternative to banning or suspending users for h
 Please cite our paper in any published work that uses any of these resources.
 
 ~~~bibtex
-
+@misc{saha2024crowdcounterbenchmarktypespecificmultitarget,
+      title={CrowdCounter: A benchmark type-specific multi-target counterspeech dataset}, 
+      author={Punyajoy Saha and Abhilash Datta and Abhik Jana and Animesh Mukherjee},
+      year={2024},
+      eprint={2410.01400},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2410.01400}, 
+}
 ~~~
 
 # Setup
